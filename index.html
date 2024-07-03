@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro de Desenhos</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <main>
+        <canvas width="550" height="300"></canvas><!--Quadro com tamanho já definido-->
+        <div class="buttons">
+                <input type="color"><!--Seletor de cores-->
+                <select id="brushSize"><!--Seletor do tamanho do pincel com valores predefinidos-->
+                    <option value= 1 >Pequeno</option>
+                    <option value= 5 >Médio</option>
+                    <option value= 10 >Grande</option>
+                </select>
+                <button onclick="clearBoard()" class="clear">Apagar</button><!--Botão para limpar o quadro-->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
